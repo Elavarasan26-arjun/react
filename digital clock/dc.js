@@ -1,0 +1,24 @@
+const clock=document.querySelector('.clock')
+function runclock(){
+    var t=new Date()
+   
+    var h=t.getHours()
+    
+    var m=t.getMinutes()
+   
+    var s=t .getSeconds()
+    var txt="AM"
+    if(h>12){
+        h=h-12
+        txt="PM"
+    }else if(h==0){
+         h=12
+         txt="AM"
+    }
+    h=h<10?'0'+h:h
+    m=m<10?'0'+m:m
+    s=s<10?'0'+s:s
+    clock.innerHTML=(`${h} : ${m} : ${s} ${txt}`)
+}
+runclock()
+setInterval(runclock,1000)

@@ -1,0 +1,56 @@
+#form{
+    width: 250px;
+    height: 410px;
+    margin: 20vh auto 0 auto;
+    background-color: rgba(35, 221, 116, 0.4) ;
+    padding: 40px;
+    border-radius: 10px;
+    
+    
+}
+h2{
+    color: fuchsia;
+    font-size: bold;
+    text-align: center;
+}
+.button{
+    color: white;
+    background-color: fuchsia;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.input-group input{
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom:20px ;
+    font-size: 20px;
+    font-weight: bold;
+    border:1px solid chartreuse
+}
+.input-group input:focus{
+    outline: 0;
+
+}
+.error{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.input-group.success input{
+    border-color: green;
+}
+.input-group.error input{
+    border-color: red;
+}
+body{
+    background-image: url(edit.jpg);
+    background-size: cover;
+}
